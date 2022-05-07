@@ -236,3 +236,29 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 ##### Image for Reference:
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
+***
+# Detect a Cycle in a Linked List
+
+### Problem Statement
+Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.
+
+Return true if there is a cycle in the linked list. Otherwise, return false.
+
+### Algorithm
+Slow and Faster Pointer
+We will use two pointers with different steps forward. The process is as follows:-
+
+We will take two pointers, namely fast and slow. Fast pointer takes 2 steps ahead and slow pointer takes 2 points ahead.
+Iterate through the list until the fast pointer is equal to NULL. This is because NULL indicates that there is no cycle present in the given list.
+Cycle can be detected when fast and slow pointers collide.
+
+![1](https://user-images.githubusercontent.com/69976168/167244356-5c189a51-bca7-4e98-951e-74d7f920199b.JPG)
+![2](https://user-images.githubusercontent.com/69976168/167244368-c037108b-351e-4e14-92f7-5ea22b5a2fe6.JPG)
+![3](https://user-images.githubusercontent.com/69976168/167244470-9d25ab6c-fb70-4a56-9375-997cf413be13.JPG)
+![4](https://user-images.githubusercontent.com/69976168/167244474-f9b94d94-9f7a-4f4d-bcd7-cf3599d1329e.JPG)
+
+### Complexities
+Time Complexity: O(N)
+Reason: In the worst case, all the nodes of the list are visited.
+Space Complexity: O(1)
+Reason: No extra data structure is used.
